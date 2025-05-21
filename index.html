@@ -13,11 +13,21 @@
 </head>
 
 
-<!--Header statique, btn devis, phrase d'accroche-->
+<!--Header statique - logo - btn -->
 
-<header class=" rad bgbrown">
+<header class=" flex spaceBetween rad">
+    <div>
+        <img class="w60" src="assets/logo-chocolat-1.png" alt="LOGO">
+    </div>
+    <div class=" flex gap32 alignCenter ">
 
-    <img class="" src="assets/logo-chocolat-1.png" alt="LOGO">
+        <a href="#contact">Nous contacter</a>
+
+        <a href="#produits">Nos Produits</a>
+
+        <a class="padRight" href="#clients">Nos clients <BR> le disent</a>
+
+    </div>
 
 </header>
 
@@ -29,7 +39,7 @@
     <!-- Section 0 - HERO - titre - btn devis - phrase d'accroche  -->
 
     <section class="pad cwhite flex spaceBetween rad container" id="hero">
-        <h1 class=" pad alignCenter cwhite font">Le chocolat qui éveille vos papilles
+        <h1 class=" textCenter cwhite">Le chocolat qui éveille vos papilles
         </h1>
         <div class="btn ">Devis gratuit
         </div>
@@ -39,25 +49,29 @@
 
     <!-- Section 1 - NOS PRODUITS -->
 
-    <section class="flex cwhite container">
-        <div>
-            <h2 class=" pad font60">Nos produits</h2>
-        </div>
+    <section class="cwhite container" id="produits">
 
-        <div class="flex alignCenter spaceBetween card" id="produits">
-            <div class="card2">
-                <img class="rad2" src="assets/Barre_Cafe_THI_3494.webp" alt="Image produits">
-                <h3 class="font35">Praliné croustillant</h3>
-                <p class="font25">"Une ganache fondante au praliné, agrémentée d'éclats de noisettes croustillants. Un
+        <h2 class="textCenter titre alignCenter pad font25">Nos produits</h2>
+
+        <div class="flex alignCenter spaceBetween " id="produits">
+            <div class=" card">
+                <img class="rad" src="assets/Barre_Cafe_THI_3494.webp" alt="Image produits">
+                <h3 class="font25">Praliné croustillant</h3>
+                <p class="font15">"Une ganache fondante au praliné, agrémentée d'éclats de noisettes croustillants. Un
                     véritable délice
                     pour les amateurs de chocolat et de fruits secs."</p>
             </div>
-        </div>
-         <div class="flex alignCenter spaceBetween card" id="produits">
-            <div class="card2">
-                <img class="rad2" src="assets/Barre_Cafe_THI_3494.webp" alt="Image produits">
-                <h3 class="font35">Praliné croustillant</h3>
-                <p class="font25">"Une ganache fondante au praliné, agrémentée d'éclats de noisettes croustillants. Un
+            <div class="card">
+                <img class="rad" src="assets/Barre_Cafe_THI_3494.webp" alt="Image produits">
+                <h3 class="font25">Praliné croustillant</h3>
+                <p class="font15">"Une ganache fondante au praliné, agrémentée d'éclats de noisettes croustillants. Un
+                    véritable délice
+                    pour les amateurs de chocolat et de fruits secs."</p>
+            </div>
+            <div class="card">
+                <img class="rad" src="assets/Barre_Cafe_THI_3494.webp" alt="Image produits">
+                <h3 class="font25">Praliné croustillant</h3>
+                <p class="font15">"Une ganache fondante au praliné, agrémentée d'éclats de noisettes croustillants. Un
                     véritable délice
                     pour les amateurs de chocolat et de fruits secs."</p>
             </div>
@@ -66,34 +80,70 @@
 
     <!-- Section 2 - NOS AVIS CLIENTS -->
 
-    <section class=" cwhite container">
+    <section class=" cwhite container" id="clients">
         <div>
-            <div>
-                <h2>Nos avis clients</h2>
-            </div>
-            <div>
-                <ul>
-                    <li>${nom}</li>
-                    <li>${typePrestation}</li>
-                    <li>${commentaire}</li>
-                    <li>${note} /5</li>
+            <h2 class="textCenter alignCenter pad font25">Nos avis clients</h2>
+        </div>
+        <div class="flex spaceBetween pad">
+
+            <div class="flex textCenter cardAvis">
+                <ul class="">
+                    <li class="font15">Sophie</li>
+                    <li class="font15">Coffret cadeau personnalisé</li>
+                    <li>Le coffret de chocolats que j'ai offert était magnifique et délicieux. Les saveurs étaient
+                        variées et originales, et la présentation était très soignée. Un grand merci au Palais du
+                        Chocolat pour ce cadeau parfait.</li>
+                    <li class="font15">Note 5/5</li>
                 </ul>
             </div>
+            <div class="flex textCenter cardAvis">
+                <ul class="">
+                    <li class="font15">Sophie</li>
+                    <li class="font15">Coffret cadeau personnalisé</li>
+                    <li>Le coffret de chocolats que j'ai offert était magnifique et délicieux. Les saveurs étaient
+                        variées et originales, et la présentation était très soignée. Un grand merci au Palais du
+                        Chocolat pour ce cadeau parfait.</li>
+                    <li class="font15">Note 5/5</li>
+                </ul>
+            </div>
+            <div class="flex textCenter cardAvis">
+                <ul class="">
+                    <li class="font15">Sophie</li>
+                    <li class="font15">Coffret cadeau personnalisé</li>
+                    <li>Le coffret de chocolats que j'ai offert était magnifique et délicieux. Les saveurs étaient
+                        variées et originales, et la présentation était très soignée. Un grand merci au Palais du
+                        Chocolat pour ce cadeau parfait.</li>
+                    <li class="font15">Note 5/5</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
     <!-- Section 3 - BENEFICES CLIENT -->
 
-    <section class=" cwhite container">
-        <div>
-            <ul>
-                <li>"Des chocolats artisanaux de qualité supérieure, réalisés à partir d'ingrédients sélectionnés avec
-                    soin"</li>
-                <li>"Des saveurs uniques et originales, pour des sensations gustatives incomparables"</li>
-                <li>"Une attention particulière portée à la présentation des chocolats, pour des cadeaux gourmands
-                    inoubliables"</li>
-                <li>"Un service personnalisé et attentionné, pour répondre à toutes vos demandes et envies"</li>
-            </ul>
+    <section class="bgwhite container">
+        <div class="container flex spaceBetween">
+            <div class="flex large-2 cardBene">
+                <img class=""
+                    src="assets/stock-photo-the-farmer-works-in-the-irrigation-corn-passionate-about-agriculture-agriculture-a-business-2499563593.jpg"
+                    alt="Photo agriculture">
+                <p>Des chocolats artisanaux de qualité supérieure, réalisés à partir d'ingrédients sélectionnés avec
+                    soin</p>
+            </div>
+            <div class="large-2 cardBene">
+                <img src="assets/epices_592527149.webp" alt="Photo épices">
+                <p>Des saveurs uniques et originales, pour des sensations gustatives incomparables</p>
+            </div>
+            <div class="large-2 cardBene">
+                <img src="assets/sachet-90-g-assortiment-chocolats_prd.jpg" alt="">
+                <p>Une attention particulière portée à la présentation des chocolats, pour des cadeaux gourmands
+                    inoubliables</p>
+            </div>
+            <div class="large-2 cardBene">
+                <img src="assets/Barre_Cafe_THI_3494.webp" alt="">
+                <p>Un service personnalisé et attentionné, pour répondre à toutes vos demandes et envies</p>
+            </div>
         </div>
     </section>
 
@@ -102,7 +152,26 @@
 
 <!-- Footer ( btn contact - mentions légales - liste magasins)-->
 
-<footer>
+<footer class=" flex alignCenter bgwhite container" id="contact">
+    <div>
+        <p>Une demande particulière, n'hésitez pas à nous contacter!</p>
+    </div>
+    <div>
+        <h3>
+            <img src="assets/Group.png" alt="">
+            Contact
+        </h3>
+        <p>
+            Cours Fauriel
+            42000 Saint Etienne
+            contact@lepalaisduchocolat.com
+            0123456789
+        </p>
+        <a href="">contact@lepalaisduchocolat.com</a>
+        <p>
+            Copyright © La toile | Designed by Jérémie Brun - Powered by GutHub
+        </p>
+    </div>
 
 </footer>
 
