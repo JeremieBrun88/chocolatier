@@ -8,21 +8,13 @@ fetch("data.json")
     })
 
 
-// je récupère les éléments du Html //
+// je récupère les éléments du Html HERO //
 
 
-document.getElementById("header").innerHTML +=
+document.getElementById("hero").innerHTML +=
+
     `
-    <div>
-        <img src="assets/" alt="LOGO">
-        </div>
-        <div>
-            <h1>${data.nomEntreprise}</h1>
-        </div>
-        <div>
-        <p>${data.slogan}</p>
-        <p>${data.bouton}</p>
-    </div>
+     
   `
 
 
@@ -41,14 +33,8 @@ function afficher(produits) {
 
         document.getElementById("produits").innerHTML += `
         
-          <div>
-                <h2>Nos produits</h2>
-            </div>
-            <div>
-                <img src="${image-url}" alt="">
-                <h3>${titre}</h3>
-                <p>${présentation}</p>
-            </div>
+         
+          
         `
     })
 }

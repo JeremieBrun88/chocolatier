@@ -8,31 +8,65 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
 
+
+
 </head>
 
 
 <!--Header statique, btn devis, phrase d'accroche-->
 
-<header id="header">
+<header class=" rad bgbrown">
 
+    <img class="" src="assets/logo-chocolat-1.png" alt="LOGO">
 
 </header>
 
-<!-- Body ( Nos produits - Nos avis Clients - Nos bénéfices client )-->
+<!-- Body ( Hero - Nos produits - Nos avis Clients - Nos bénéfices client )-->
 
 <body>
 
+
+    <!-- Section 0 - HERO - titre - btn devis - phrase d'accroche  -->
+
+    <section class="pad cwhite flex spaceBetween rad container" id="hero">
+        <h1 class=" pad alignCenter cwhite font">Le chocolat qui éveille vos papilles
+        </h1>
+        <div class="btn ">Devis gratuit
+        </div>
+
+
+    </section>
+
     <!-- Section 1 - NOS PRODUITS -->
 
-    <section>
-        <div id="produits">
-          
+    <section class="flex cwhite container">
+        <div>
+            <h2 class=" pad font60">Nos produits</h2>
+        </div>
+
+        <div class="flex alignCenter spaceBetween card" id="produits">
+            <div class="card2">
+                <img class="rad2" src="assets/Barre_Cafe_THI_3494.webp" alt="Image produits">
+                <h3 class="font35">Praliné croustillant</h3>
+                <p class="font25">"Une ganache fondante au praliné, agrémentée d'éclats de noisettes croustillants. Un
+                    véritable délice
+                    pour les amateurs de chocolat et de fruits secs."</p>
+            </div>
+        </div>
+         <div class="flex alignCenter spaceBetween card" id="produits">
+            <div class="card2">
+                <img class="rad2" src="assets/Barre_Cafe_THI_3494.webp" alt="Image produits">
+                <h3 class="font35">Praliné croustillant</h3>
+                <p class="font25">"Une ganache fondante au praliné, agrémentée d'éclats de noisettes croustillants. Un
+                    véritable délice
+                    pour les amateurs de chocolat et de fruits secs."</p>
+            </div>
         </div>
     </section>
 
     <!-- Section 2 - NOS AVIS CLIENTS -->
 
-    <section>
+    <section class=" cwhite container">
         <div>
             <div>
                 <h2>Nos avis clients</h2>
@@ -50,10 +84,15 @@
 
     <!-- Section 3 - BENEFICES CLIENT -->
 
-    <section>
+    <section class=" cwhite container">
         <div>
             <ul>
-                <li>${listeBeneficesClients}</li>
+                <li>"Des chocolats artisanaux de qualité supérieure, réalisés à partir d'ingrédients sélectionnés avec
+                    soin"</li>
+                <li>"Des saveurs uniques et originales, pour des sensations gustatives incomparables"</li>
+                <li>"Une attention particulière portée à la présentation des chocolats, pour des cadeaux gourmands
+                    inoubliables"</li>
+                <li>"Un service personnalisé et attentionné, pour répondre à toutes vos demandes et envies"</li>
             </ul>
         </div>
     </section>

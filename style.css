@@ -4,15 +4,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Dancing Script", cursive;
   margin-bottom: 10px;
 }
+
+ul {
+  list-style-type: none;
+}
+
+
+/* image fond d'écran */
+
+
+body
+{ background-image: url("assets/bandeau_cafe2.webp");
+  background-repeat: initial;
+  background-size: cover;
+  }
 
 /* header */
 
 header {
   border-bottom: 1px solid #000;
-  padding: 9px 0;
+
   background-color: #fff;
   position: sticky;
   top: 0;
@@ -23,8 +37,29 @@ header {
 /* texte */ 
 
 h1 {
-  font-size: 30px;
+  font-size: 80px;
+   font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
 }
+.font25 {
+    font-size: 25px;
+}
+
+.font35 {
+    font-size: 35px;
+}
+
+.font40 {
+font-size: 40px;
+}
+
+.font60 {
+    font-size: 60px;
+}
+
+
 
 h2 {
   font-size: 20px;
@@ -33,7 +68,7 @@ h2 {
 }
 
 
-/* tailles */
+/* tailles - largueur */
 
 .large-1 {
   width: calc(8.3333333333% - 11 * var(--gap) / 12);
@@ -105,7 +140,7 @@ h2 {
 }
 
 
-/*Flexbox*/
+/* Flexbox */
 
 .flex {
   display: flex;
@@ -113,15 +148,15 @@ h2 {
 
 }
 
-.justify-between {
+.spaceBetween {
   justify-content: space-between;
 }
 
-.align-center {
+.alignCenter {
   align-items: center;
 }
 
-.justify-center {
+.justifyCenter {
   justify-content: center;
 }
 
@@ -141,22 +176,24 @@ h2 {
 
 /*Carte*/
 
-.legende {
-  background-color: var(--orange);
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 16px;
-  border-radius: 0 0 10px 10px;
-}
-
 .card {
-  padding: 16px;
+  padding-bottom: 20px;
   box-shadow: 0 0 30px var(--light-grey);
   font-size: 13px;
   margin-top: 64px;
   border-radius: 20px;
+  width: 33%;
 }
+
+.card2 {
+background-color: rgb(116, 102, 99);
+  padding: 8px 16px;
+  border: 2px solid var(--orange);
+  border-radius: 32px;
+  color: #fff;
+}
+
+
 
 .card ul,
 .card ol {
@@ -164,10 +201,11 @@ h2 {
 }
 
 .btn {
-background-color: orange;
+background-color: rgb(247, 185, 14);
   padding: 8px 16px;
   border: 2px solid var(--orange);
   border-radius: 32px;
+  color: #fff;
 }
 
 .little-btn {
@@ -185,7 +223,7 @@ background-color: orange;
 /*Mise en page*/
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 16px;
@@ -201,3 +239,27 @@ background-color: orange;
 }
 
 
+.bgred {
+    background-color: red;
+}
+
+.bgbrown {
+    background-color: rgb(165, 42, 42);
+}
+
+.cwhite {
+    color: #fff;
+}
+
+.pad {
+     padding-bottom: 30px;
+}
+
+.rad {
+    border-radius: 30px;
+
+}
+
+.rad2 {
+    border-radius: 0 50px;
+}
