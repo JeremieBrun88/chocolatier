@@ -8,18 +8,10 @@
     margin-bottom: 10px;
     list-style-type: none;
     text-decoration: none;
+    background-color: E4E0E1;
 }
 
 
-
-/* image fond d'écran */
-
-
-body {
-    background-image: url("assets/bandeau_cafe2.webp");
-    background-repeat: initial;
-    background-size: cover;
-}
 
 
 /* header */
@@ -31,7 +23,7 @@ header {
     top: 5px;
     width: 100%;
     display: block;
-        background-image: url("assets/delicieux-cafe-biologique-nature-morte_23-2151762341.avif");
+    background-image: url("assets/delicieux-cafe-biologique-nature-morte_23-2151762341.avif");
     background-repeat: no-repeat;
     background-size: cover;
     height: 80px;
@@ -54,6 +46,7 @@ h1 {
 .font20 {
     font-size: 20px;
 }
+
 .font25 {
     font-size: 25px;
 }
@@ -208,7 +201,7 @@ a {
 }
 
 .card {
-    background-color: rgb(116, 102, 99);
+    background-color: #AB886D;
     padding: 8px 16px;
     border: 2px solid var(--orange);
     border-radius: 32px;
@@ -217,16 +210,16 @@ a {
 }
 
 .cardAvis {
-    background-color: rgb(66, 82, 207);
+    background-color: #D6C0B3;
     padding: 8px 16px;
     border: 2px solid var(--orange);
     border-radius: 100%;
-    color: #fff;
+  
     width: 25%;
 }
 
 .cardBene {
- 
+
     padding: 8px 16px;
     border: 2px solid var(--orange);
     border-radius: 32px;
@@ -239,7 +232,7 @@ a {
 
 .cardBene img {
     width: 100%;
-border-radius: 32px ;
+    border-radius: 32px;
 }
 
 .card ul,
@@ -272,6 +265,7 @@ border-radius: 32px ;
     border-radius: 32px;
     color: #fff;
 }
+
 /*Mise en page*/
 
 .container {
@@ -303,6 +297,10 @@ border-radius: 32px ;
     color: #fff;
 }
 
+.c#493628 {
+    color: #493628;
+}
+
 .pad {
     padding-bottom: 50px;
 }
@@ -318,4 +316,13 @@ border-radius: 32px ;
 
 .bgwhite {
     background-color: #fff;
+}
+
+
+.hero {
+    background-image: url(assets/bandeau_cafe2.webp);
+}
+
+.foot {
+    background-color: #493628;
 }
