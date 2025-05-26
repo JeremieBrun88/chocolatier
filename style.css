@@ -37,7 +37,7 @@ body {
 /* texte */
 
 h1 {
-    font-size: 40px;
+    font-size: 60px;
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
@@ -268,6 +268,7 @@ a {
     padding: 8px 16px;
     border-radius: 32px;
     color: #fff;
+    display: inline-block;
 }
 
 .little-btn {
@@ -316,6 +317,11 @@ a {
     background-color: rgb(165, 42, 42);
 }
 
+.bgE4E0E1 {
+    background-color: #e4e0e162;
+    border-radius: 15px;
+}
+
 .cwhite {
     color: #fff;
 }
@@ -348,6 +354,9 @@ a {
 
 .hero {
     background-image: url(assets/bandeau_cafe2.webp);
+    height: 400px;
+    padding: 150px;
+    color: #493628;
 }
 
 .foot {
@@ -358,5 +367,6 @@ a {
     height: 200px;
     object-fit: cover;
 }
+
 
 
