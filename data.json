@@ -2,11 +2,23 @@
     "nomEntreprise": "Palais du Chocolat",
     "slogan": "Le chocolat qui éveille vos papilles",
     "bouton": "Devis gratuit",
-    "listeBeneficesClients": [
-        "Des chocolats artisanaux de qualité supérieure, réalisés à partir d'ingrédients sélectionnés avec soin",
-        "Des saveurs uniques et originales, pour des sensations gustatives incomparables",
-        "Une attention particulière portée à la présentation des chocolats, pour des cadeaux gourmands inoubliables",
-        "Un service personnalisé et attentionné, pour répondre à toutes vos demandes et envies"
+    "benefices": [
+        {
+            "image": "assets/stock-photo-the-farmer-works-in-the-irrigation-corn-passionate-about-agriculture-agriculture-a-business-2499563593.jpg",
+            "commentaire": "Des chocolats artisanaux de qualité supérieure, réalisés à partir d'ingrédients sélectionnés avec soin"
+        },
+        {
+            "image": "assets/epices_592527149.webp",
+            "commentaire": "Des saveurs uniques et originales, pour des sensations gustatives incomparables"
+        },
+        {
+            "image": "assets/sachet-90-g-assortiment-chocolats_prd.jpg",
+            "commentaire": "Une attention particulière portée à la présentation des chocolats, pour des cadeaux gourmands inoubliables"
+        },
+        {
+            "image": "assets/Barre_Cafe_THI_3494.webp",
+            "commentaire": "Un service personnalisé et attentionné, pour répondre à toutes vos demandes et envies"
+        }
     ],
     "produits": [
         {

@@ -3,15 +3,18 @@ fetch("data.json")
     .then(donnee => {
         afficherProduits(donnee.produits)
         afficherClients(donnee.clients)
+        afficherBenefices(donnee.benefices)
     })
 
 
 //role : afficher les produits dans #produits
-//paramùetre: le tableau produits
+//parametre: le tableau produits
 //return : rien
 
 function afficherProduits(tableauProduits) {
     tableauProduits.forEach(produit => {
+ 
+
 
         document.getElementById("produits").innerHTML += `
 
@@ -31,18 +34,16 @@ function afficherProduits(tableauProduits) {
 //return : rien
 
 function afficherClients(tableauClients) {
-    tableauClients.forEach(clients => {
+    tableauClients.forEach(client => {
 
         document.getElementById("clients").innerHTML += `
 
         <div class="flex textCenter cardAvis">
              <ul class="">
-               <li class="font15">Sophie</li>
-              <li class="font15">Coffret cadeau personnalisé</li>
-               <li>Le coffret de chocolats que j'ai offert était magnifique et délicieux. Les saveurs étaient
-                  variées et originales, et la présentation était très soignée. Un grand merci au Palais du
-                 Chocolat pour ce cadeau parfait.</li>
-              <li class="font15">Note 5/5</li>
+               <li class="font15">${client.nom}</li>
+              <li class="font15">${client.typePrestation}</li>
+               <li>${client.commentaire}</li>
+              <li class="font15">${client.note}/5</li>
              </ul>
         </div>
     
@@ -50,6 +51,24 @@ function afficherClients(tableauClients) {
     });
 }
 
+//role : afficher la liste des bénéfices clients
+// parametre : le tableau des bénéfices clients
+//return : rien
 
+function afficherBenefices(tableauBenefices) {
+    tableauBenefices.forEach(benefice => {
 
+        document.getElementById("benefices").innerHTML += `
+
+       <div class="">
+            <div class="flex large-6 cardBene">
+                <img class="img"
+                    src= ${benefice.image} alt="Photo agriculture">
+                <p>${benefice.commentaire}</p>
+            </div>
+        </div>
+    
+    `
+    });
+}
 

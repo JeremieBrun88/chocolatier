@@ -8,7 +8,6 @@
     margin-bottom: 10px;
     list-style-type: none;
     text-decoration: none;
-    background-color: E4E0E1;
 }
 
 
@@ -27,6 +26,12 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 80px;
+}
+
+/* body */
+
+body {
+    background-color: #E4E0E1;
 }
 
 /* texte */
@@ -75,7 +80,22 @@ a {
     font-size: 25px;
 }
 
+.anim {
+    animation-duration: 4s;
+  animation-name: slidein;
+}
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 /* tailles - largueur */
 
 .large-1 {
@@ -156,6 +176,10 @@ a {
 
 }
 
+.flexBene {
+    display: flex;
+}
+
 .spaceBetween {
     justify-content: space-between;
 }
@@ -221,9 +245,8 @@ a {
 .cardBene {
 
     padding: 8px 16px;
-    border: 2px solid var(--orange);
-    border-radius: 32px;
-    width: 25%;
+    border-radius: 12px;
+    width: 100%;
 }
 
 .card img {
@@ -232,7 +255,7 @@ a {
 
 .cardBene img {
     width: 100%;
-    border-radius: 32px;
+    border-radius: 12px;
 }
 
 .card ul,
@@ -305,12 +328,16 @@ a {
     padding-bottom: 50px;
 }
 
+.padTop {
+    padding-top: 50px;
+}
+
 .padRight {
     padding-right: 60px;
 }
 
 .rad {
-    border-radius: 30px;
+    border-radius: 10px;
 
 }
 
@@ -326,3 +353,10 @@ a {
 .foot {
     background-color: #493628;
 }
+
+.img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
